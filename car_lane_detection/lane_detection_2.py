@@ -118,7 +118,7 @@ def process_an_image(img):
   gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
   darken = (gray / 3).astype(np.uint8)
   color_masked = cv2.bitwise_or(darken, color_mask)
-  blur_gray = cv2.GaussianBlur(color_masked, (blur_ksize, blur_ksize), 0)
+  blur_gray = cv2.GaussianBlur(color_masked, (blur_ksize, blur_ksize), 0, 0)
   edges = cv2.Canny(blur_gray, canny_lthreshold, canny_hthreshold)
   roi_edges = roi_mask(edges, roi_vtx)
   line_img = hough_lines(roi_edges, rho, theta, threshold, min_line_length, max_line_gap)

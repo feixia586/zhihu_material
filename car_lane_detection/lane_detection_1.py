@@ -98,7 +98,7 @@ def process_an_image(img):
   roi_vtx = np.array([[(0, img.shape[0]), (460, 325), (520, 325), (img.shape[1], img.shape[0])]])
 
   gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
-  blur_gray = cv2.GaussianBlur(gray, (blur_ksize, blur_ksize), 0)
+  blur_gray = cv2.GaussianBlur(gray, (blur_ksize, blur_ksize), 0, 0)
   edges = cv2.Canny(blur_gray, canny_lthreshold, canny_hthreshold)
   roi_edges = roi_mask(edges, roi_vtx)
   line_img = hough_lines(roi_edges, rho, theta, threshold, min_line_length, max_line_gap)
