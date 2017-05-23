@@ -29,7 +29,7 @@ state score = value network output + fast rollout policy outcome + SL policy net
 High state score (or stone move) will be selected. Value network output and fast rollout policy outcome are evaluation functions and are evaluated at the leaf node (but note that to evaluate fast rollout, we need to go until terminal step); SL policy network output is a probability of action at current stage, acting as a bonus of selection score. The score will be decayed by number of visits to encourage exploration. Note that RL policy network is only used for helping to derive value network and not used directly in MCTS.  
 \end{itemize}
 
-That's it, the Alpha Go program that beats human!
+That's it, the AlphaGo program that beats human!
 \bibliographystyle{plain}
 \bibliography{one_page_alphago}
 
