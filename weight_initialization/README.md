@@ -1,4 +1,4 @@
-**This is the material for deep learning weight initialization [zhihu post](https://zhuanlan.zhihu.com/p/25110150).**
+**Material for [ZhiHu post](https://zhuanlan.zhihu.com/p/25110150) that talks about deep learning weight initialization .**
 
 w_init.py is the main file.
 
