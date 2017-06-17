@@ -1,4 +1,4 @@
-**This is the material for this lane detection [zhihu post](https://zhuanlan.zhihu.com/p/25354571).**
+**Material for [ZhiHu post](https://zhuanlan.zhihu.com/p/25354571) that describes basic lane detection.**
 
 lane_detection_1.py is for video_1.mp4 and video_2.mp4
 lane_detection_2.py is for video_3.mp4
