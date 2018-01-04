@@ -1,3 +1,5 @@
+**Material for [ZhiHu post](https://zhuanlan.zhihu.com/p/27439184) that describes end-to-end self driving car.**
+
 Use Deep Convolutional Neural Network (DCNN) to train an end-to-end self driving system in a [simulator](https://github.com/udacity/self-driving-car-sim).
 
 - drive.py: script for applying model in self-driving.
